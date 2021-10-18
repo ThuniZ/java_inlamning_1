@@ -66,6 +66,7 @@ undersöka om dessa värden är nummer, om så är fallet ska värdena multiplic
 ska sedan visas i en alert-box utefter följande: Produkten är: [RESULTATET], annars om ett av 
 eller båda värdena inte är ett nummer ska en alertbox med meddelandet "Jag kan bara multiplicera numer" triggas
 */
+//Dubble kolla med Christian
 function multiplier(valueOne, valueTwo) {
   //alert("Replace this alert with a solution");
   let sum = valueOne * valueTwo
@@ -73,17 +74,17 @@ function multiplier(valueOne, valueTwo) {
   console.log(typeof valueOne);
   console.log(sum);
 
-  if (typeof sum === "number") {
+  if (sum) {
     alert("Produkten är: " +sum)
   } else {
-    alert("Jag")
+    alert("Jag kan bara multiplicera nummer!")
   };
 
 
 }
 
 function taskFour() {
-  multiplier("knajs",20);
+  multiplier("kjhhb",20);
 }
 
 
@@ -152,7 +153,7 @@ const overThirty = [];
 const underThirty = [];
 
 function taskSix() {
-  //if (persons[1]== > 30)
+  
 
   //alert("Replace this alert with a solution");
 }
@@ -169,7 +170,9 @@ const addMeSomeLineBreaks =
 
 function taskSeven() {
   
-  alert(addMeSomeLineBreaks.split(","));
+  document.getElementById("answer-seven").innerHTML = addMeSomeLineBreaks.replace(/,/g, "<br>");
+
+  //alert(addMeSomeLineBreaks.replace(","));
 };
 
 /*
@@ -181,6 +184,7 @@ efter att tre sekunder har gått ska diven visas som vanligt igen
 function taskEight() {
   //setTimeout(function(){document.getElementById("card-eight").style.display = "none";}, 3000);
   //setTimeout(function(){document.getElementById("card-eight").style.display = "block";}, 3000);  
+
  
   
 };
@@ -218,11 +222,14 @@ om någon av dessa conditions inte uppfylls ska du visa en alertbox med texten "
 */
 
 function calculator(valueOne, valueTwo, operator) {
-  alert("Replace this alert with a solution");
-}
+  //alert("Replace this alert with a solution");
+  
+  
+};
 
 function taskTen() {
   //första och andra argumentet ska vara nummer, tredje argumentet ska
   //vara en sträng med något av värdena "add", "subtract", "multiply", "divide"
-  calculator();
+  calculator(10,20,"add");
+
 };
